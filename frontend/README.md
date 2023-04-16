@@ -43,7 +43,9 @@ This is where the organisations see all of their students, their course completi
 This is the Classroom, where all the course related details of the user will reside.
 
 Frontend Overview:
-|-public -> This folder is used solely for images and tailwind css configu
+
+<pre>
+|-public -> This folder is used solely for images and tailwind css configurations
 |-src -> Main folder containing all of the source code for the app
    |-abi -> 
    |-action -> 
@@ -65,3 +67,4 @@ Frontend Overview:
    |-main.jsx -> This file renders the App.jsx file in the ThemeProvider and MaterialTailwindControllerProvider, which is necessary to make tailwind and material accessible throught the app
    |-routes.jsx -> This file contains the nested routes for dashboard
    |-Store.js -> This is the Redux Store, which we have used to make data be accessible by every component
+</pre>
