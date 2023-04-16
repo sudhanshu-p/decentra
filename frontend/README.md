@@ -1,45 +1,35 @@
 # The general flow of the App:
 
 ## Entry point -> Homepage
-
 The homepage is what sells the website to the user. User sees this and feels like this may be of their use
 
 ### After this, he goes to the /compete page
-
 This page is a listing of all the hackathons going on at the moment. The user sees this and is excited to join the platform!
 
 ### For orgs and for students both
-
 Our platform is meant to act as a medium between organization / colleges and students, hence we have to cater to both of them with 2 seperate logins
 
 ### Next step is the Registration part!
-
 The user connects the app securely with their metamask account through the plugin. The system checks if it is a new user of an old user through the metask account ID.
 
 ### They're logged in!
-
 Once logged in, the user is shown his dashboard, where his profile and past works are shown with an aesthetic UI. The user has 4 links here, home, profile, user-dashboard / organization-dashboard and classrooms.
 
 ### Home:
-
 This contains all the graphs generated for the user using apex-graphs.
 
 ### Profile:
-
 This section will show the profile of the user (editing profile coming soon!)
 
 ### User-Dashboard:
 (Only for users)
-
 This is where the user can see all of his past endeavours
 
 ### Organization-Dashboard:
 (Only for organizations)
-
 This is where the organisations see all of their students, their course completion percentage and get the option to mint new NFTs as certificates for the user
 
 ### Classroom
-
 This is the Classroom, where all the course related details of the user will reside.
 
 Frontend Overview:
