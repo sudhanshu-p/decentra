@@ -1,4 +1,4 @@
-@import url(app2.css);
+@import url(app.css);
 
 .topsection {
   padding: 6.5rem 0;
@@ -51,17 +51,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1.2 rem;
+  gap: 1.3rem;
   width: 580px;
-
 }
+
 .topsection-image {
-  width: 30%;
+  width: 190px;
   position: relative;
   transition: all 0.3s linear;
   height:fit-content;
   /* gap : 5 px; */
-
 }
 
 .topsection-image img{
@@ -100,7 +99,7 @@
   color: #08678f !important;
 }
 
-topsection-image img {
+.topsection-image img {
   width: 100%;
 }
 

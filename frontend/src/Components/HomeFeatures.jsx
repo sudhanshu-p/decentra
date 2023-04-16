@@ -1,6 +1,6 @@
 import React from "react";
-import Features from "../Features";
-import "../CSS/Features.css"
+import Features from "@/Features";
+import "@/CSS/Features.css"
 
 function HomeFeatures() {
   return (

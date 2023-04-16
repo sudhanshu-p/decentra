@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-import "../CSS/SlidingBrands.css";
+import "@/CSS/SlidingBrands.css";
 
 function SlidingBrands(props) {
   const brands = [

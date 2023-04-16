@@ -1,8 +1,8 @@
 import React from "react";
 // import "..images" ;
-import images from "../images.js";
-import Card from "../Components/Card";
-import "../CSS/Home.css";
+import images from "@/images.js";
+import Card from "./MyCard.jsx";
+import "@/CSS/Home.css";
 
 const HomeHero = () => {
   return (

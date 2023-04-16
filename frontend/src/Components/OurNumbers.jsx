@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 // const[count,setCount]=useState(0);
 
-// function Change(){
-//   setcount("https://api.countapi.xyz/update/unstop/mouse/?amount=1");
-// }
+function Change(){
+  setcount("https://api.countapi.xyz/update/unstop/mouse/?amount=1");
+}
 
 function OurNumbers() {
   return (

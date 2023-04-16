@@ -1,6 +1,7 @@
 const initialData={
     wallet: "0X"
 }
+
 const walletReducer=(state=initialData,action)=>{
      if(action.type==="AddWallet"){
         console.log("yaha");
