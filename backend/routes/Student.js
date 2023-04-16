@@ -17,6 +17,7 @@ router.post("/signup",(req,res)=>{
 router.post("/login",async(req,res)=>{
     await StudentSchema.findOne({Wallet:req.body.Wallet}).exec().then((student)=>{if(student){res.send(student)}else{res.send("No Such account found")}}).catch(err=>res.send(err))
 });
+//below API is used to check if accoun exist or not
 router.post("/",(req,res)=>{
     StudentSchema.find({Wallet:req.body.Wallet})
     .populate("Classrooms").then((Student)=>{

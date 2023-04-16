@@ -33,7 +33,7 @@ function Login(){
                     console.log(store.getState());
                     console.log(accounts[0]);
                     setTimeout(()=>{
-                        navigate("/checkwallet");
+                        navigate("/org/checkwallet");
                     },1000)
                 })
                

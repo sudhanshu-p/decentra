@@ -14,5 +14,20 @@ router.post("/signup",(req,res)=>{
 })
 router.post("/login",async(req,res)=>{
     await OrganizationSchema.findOne({Wallet:req.body.Wallet}).exec().then((org)=>{if(org){res.send(org)}else{res.send("No Such account found")}}).catch(err=>res.send(err))
-})
+});
+//below API is used to check if accoun exist or not
+router.post("/",(req,res)=>{
+    OrganizationSchema.find({Wallet:req.body.Wallet})
+    .then((Student)=>{
+        console.log(req.body);
+        if(Student.length!=0){
+            res.send(true);
+        }
+        else{
+            res.send(false);
+        }
+       
+    })
+});
+
 module.exports=router;

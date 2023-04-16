@@ -1,9 +1,10 @@
 const mongoose=require("mongoose");
 const CompetitionSchema=new mongoose.Schema({
-    title:String,
-    details:String,
-    ParticipantStudents:[{type:mongoose.Schema.Types.ObjectId,ref:"StudentSchema"}],
+    Title:String,
+    Details:String,
+    ParticipantStudents:[{type:mongoose.Schema.Types.ObjectId,ref:"StudentSchema",default:undefined}],
     Organization:{type:mongoose.Schema.Types.ObjectId,ref:"OrganizationSchema"},
-    JoinCode:Number
+    JoinCode:Number,
+    Image:String
 });
-module.exports=mongoose.Schema("CompetitionSchema",CompetitionSchema);
+module.exports=mongoose.model("CompetitionSchema",CompetitionSchema);

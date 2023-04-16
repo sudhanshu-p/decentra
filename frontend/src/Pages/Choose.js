@@ -1,7 +1,7 @@
 import React from 'react';
 import '../CSS/Choose.css';
-import studentImg from '../assets/images/student.gif';
-import orgImg from '../assets/images/org.gif';
+import studentImg from '../assets/images/student.png';
+import orgImg from '../assets/images/college.png';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -9,7 +9,7 @@ function App() {
   const navigate=useNavigate();
   return (
     <div className="Choose-container">
-      <h1 className='Choose-h1'></h1>
+      <h1 className='Choose-h1'>Who Are You</h1>
       <div className="Choose-box-container">
         <div className="Choose-box Choose-student" onClick={()=>{
            navigate("/login/student");
