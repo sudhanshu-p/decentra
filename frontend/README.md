@@ -38,17 +38,17 @@ Frontend Overview:
 |-public -> This folder is used solely for images and tailwind css configurations
 |-src -> Main folder containing all of the source code for the app
    |-abi -> 
-   |-action -> 
+   |-action -> Actions that need to be performed on certain triggers are written here
    |-All-Images -> Images used on the homepage / compete page
    |-assets -> Images used throught the app
    |-Components -> Contains the abstracted, componentized code that acts as the building block for the app
    |-configs -> Configurations of apex-charts to display charts
-   |-context -> 
+   |-context -> Material Tailwind Sidebar and Navbar context is set up on this page
    |-CSS -> All the CSS for the components resides here
    |-data -> Contains sample data which was initially rendered in the UI phase
    |-layout -> Generates the layout for every path after the user is logged in
    |-pages -> The code that combines components into pages is put here 
-   |-reducers -> 
+   |-reducers -> The wallet reducer code is setup here
    |-widgets -> A set of utility components provided by Material-Tailwind for use throughout the app
    |-App.jsx -> Where the Routing paths and Component links reside
    |-Competitions.js -> Exports the Features array to make it convenient to render over in the competitions section of the compete page
