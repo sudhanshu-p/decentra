@@ -41,6 +41,7 @@ Here's their description:
   
 ----> WalletSchema
   |-> address:String
-  
+</pre>
+
 ## Routes
 The app has various routes for get and post operations on this Schema.
