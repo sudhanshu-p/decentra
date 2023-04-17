@@ -1,5 +1,8 @@
 const mongoose=require("mongoose");
-const url=`mongodb+srv://amit:amit@cluster0.tnbldtj.mongodb.net/?retryWrites=true&w=majority`;
+require("dotenv").config();
+const url= process.env.MONGO_URL;
+
+
 module.exports.connect = () => {
     mongoose
       .connect(url, {

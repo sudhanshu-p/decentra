@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Dashboard, Auth } from "@/layouts";
+import { Dashboard } from "@/layouts";
 import Home from "@/pages/Home";
 import Compete from "@/pages/Compete";
 import Login from "@/pages/Login";
