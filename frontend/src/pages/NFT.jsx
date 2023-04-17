@@ -1,5 +1,4 @@
 import React from 'react';
-import * as dotenv from 'dotenv';
 import Web3 from "web3";
 import { cert } from "@/abi/abi";
 import { useState } from 'react';
@@ -9,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 import { json } from 'react-router-dom';
 import "@/CSS/NFT.css";
 import { useLocation } from 'react-router-dom';
-dotenv.config();
 const web3 = new Web3(Web3.givenProvider);
 const getcontract = "0x5244412F1D60886f461c8336aFFa4c27Beb5E6Ea"
 const certificate = new web3.eth.Contract(cert.abi, getcontract);
@@ -54,8 +52,8 @@ function NFT() {
                     url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
                     data: formData,
                     headers: {
-                        'pinata_api_key': process.env.PINATA_API_KEY,
-                        'pinata_secret_api_key': process.env.PINATA_SECRET_KEY,
+                        'pinata_api_key': import.meta.env.PINATA_API_KEY,
+                        'pinata_secret_api_key': import.meta.env.PINATA_SECRET_KEY,
                         "Content-Type": "multipart/form-data"
                     },
                 }).then(async (resFile) => {
